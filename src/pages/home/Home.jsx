@@ -21,8 +21,15 @@ const Home = () => {
 
   return (
     <div className={styles.container}>
-      <section id="Inicio" className={styles.welcome}>
-        {/* <div className={styles.note}>{texts.note}</div> */}
+      <section className={styles.welcome}>
+        <h2>{texts.titleLove}</h2>
+        <p>{texts.introLove}</p>
+        <p>{texts.nodoLove}</p>
+        <p>{texts.finalLove}</p>
+        <h2>{texts.titleFavorite}</h2>
+        <p>{texts.firstFavorite}</p>
+        <p>{texts.secondFavorite}</p>
+        <h2>{}</h2>
         <h2 className={styles.title}>{texts.welcome}</h2>
         <p className={styles.comment}>{texts.comment}</p>
         <span className={styles.store}>

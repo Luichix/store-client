@@ -121,10 +121,10 @@
 .section {
   background: linear-gradient(
     160deg,
-    var(--color-yellow),
+    var(--color-primary),
     white 20%,
     white 80%,
-    var(--color-yellow)
+    var(--color-primary)
   );
 }
 
@@ -159,7 +159,7 @@
 .history {
   background: linear-gradient(
     315deg,
-    var(--color-yellow),
+    var(--color-primary),
     white 50%,
     var(--color-primary)
   );
@@ -194,16 +194,16 @@
   padding: 5em 0;
   background: linear-gradient(
     200deg,
-    var(--color-yellow),
+    var(--color-primary),
     white 20%,
     white 80%,
-    var(--color-yellow)
+    var(--color-primary)
   );
 }
 
 .titleGallery {
   font-size: var(--text-max);
-  color: var(--color-yellow);
+  color: var(--color-primary);
   align-self: stretch;
 }
 
@@ -222,7 +222,7 @@
 }
 
 .content h3 {
-  color: var(--color-yellow);
+  color: var(--color-primary);
   font-size: var(--text-max);
 }
 
@@ -234,11 +234,9 @@
   object-fit: cover;
   width: 100%;
   border-radius: 25%;
-  border-bottom: 5px solid var(--color-yellow);
-  border-right: 5px solid var(--color-yellow);
+  border-bottom: 5px solid var(--color-primary);
+  border-right: 5px solid var(--color-primary);
 }
-
-@import '../App.css';
 
 .sectionContact {
   display: flex;
@@ -249,17 +247,17 @@
   width: 100%;
   background: linear-gradient(
     160deg,
-    var(--color-yellow),
+    var(--color-primary),
     white 20%,
     white 80%,
-    var(--color-yellow)
+    var(--color-primary)
   );
 }
 
 .titleContact {
   font-size: var(--text-top);
   margin: 0;
-  color: var(--color-yellow);
+  color: var(--color-primary);
 }
 
 .formContact {
@@ -279,7 +277,7 @@
 
 .dataContact label {
   font-size: var(--text-bot);
-  color: var(--color-yellow);
+  color: var(--color-primary);
   font-weight: 500;
 }
 
@@ -290,7 +288,7 @@ textarea {
   font-size: var(--text-min);
   margin: 0 0 1em 0;
   border: 1px solid transparent;
-  border-right: 3px solid var(--color-yellow);
+  border-right: 3px solid var(--color-primary);
   border-bottom: 1px solid var(--color-secundary);
   outline: none;
   text-indent: 0.5em;
@@ -305,18 +303,18 @@ textarea {
 
 .dataContact input:hover,
 textarea:hover {
-  border: 0.5px solid var(--color-yellow);
+  border: 0.5px solid var(--color-primary);
   font-weight: 700;
 }
 
 .dataContact input:focus,
 textarea:focus {
-  border: 0.5px solid var(--color-yellow);
+  border: 0.5px solid var(--color-primary);
   font-weight: 700;
 }
 
 .dataContact button {
-  background-color: var(--color-yellow);
+  background-color: var(--color-primary);
   border: 1px solid var(--color-primary);
   color: var(--color-primary);
   padding: 1em;
@@ -346,5 +344,5 @@ textarea:focus {
   width: 80%;
   height: 3px;
   border: none;
-  background-color: var(--color-yellow);
+  background-color: var(--color-primary);
 }

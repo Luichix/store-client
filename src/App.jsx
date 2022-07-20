@@ -2,8 +2,8 @@ import React, { Suspense, useContext, lazy } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import AuthContext from './contexts/AuthContext'
 // import Launch from './pages/launch'
-const DefaultLayout = lazy(() => import('./components/layouts/Default'))
 const DashboardLayout = lazy(() => import('./components/layouts/Dashboard'))
+const DefaultLayout = lazy(() => import('./components/layouts/Default'))
 const NonLayout = lazy(() => import('./components/layouts/Non'))
 const Setup = lazy(() => import('./components/layouts/Setup'))
 const Task = lazy(() => import('./components/layouts/Task'))
