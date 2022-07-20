@@ -1,0 +1,350 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.welcome {
+  background-color: var(--color-base-white);
+  color: var(--color-base-black);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  box-shadow: 0px 6px 6px #0004;
+}
+
+.welcome::after {
+  content: '';
+  background-image: url('../../assets/pictures/home.jpg');
+  background-size: cover;
+  position: absolute;
+  height: auto;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+  filter: opacity(0.5) brightness(1) contrast(1);
+}
+
+/* .note {
+  color: var(--color-base-white);
+  background-color: var(--color-base-white);
+  position: absolute;
+  text-align: center;
+  padding: 0.5em 0;
+  font-weight: 700;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+} */
+
+.store {
+  padding: 3em 0;
+  z-index: 10;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-base-white);
+  background-color: var(--color-base-black);
+  border: 1px solid var(--color-base-white);
+  padding: 1em;
+  border-radius: 5%;
+  font-size: var(--font-size-xs);
+}
+
+.link:hover {
+  color: var(--color-primary);
+  background-color: var(--color-base-white);
+  box-shadow: 0px 0px 6px #0008;
+}
+
+.list {
+  background-color: var(--color-base-white);
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-self: center;
+  flex-wrap: wrap;
+  width: 80vw;
+  padding: 0;
+  margin-top: 2em;
+  border-radius: 5%;
+  box-shadow: 6px 6px 6px #0004;
+  z-index: 10;
+}
+
+.group {
+  font-size: var(--font-size-base);
+  padding: var(--font-size-base);
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  font-size: var(--font-size-md);
+  padding: 0 0.2em;
+  color: var(--color-primary);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-size: var(--font-size-md);
+  z-index: 10;
+  padding: 0.75em;
+}
+.comment {
+  font-size: var(--font-size-base);
+  font-size: var(--font-size-xs);
+  align-self: center;
+  font-weight: 600;
+  line-height: 2em;
+  padding: 1rem;
+}
+
+.text {
+  font-size: var(--font-size-base);
+}
+
+.section {
+  background: linear-gradient(
+    160deg,
+    var(--color-yellow),
+    white 20%,
+    white 80%,
+    var(--color-yellow)
+  );
+}
+
+.gallery {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
+  max-width: 80%;
+  padding: 5em 0;
+}
+
+.figure {
+  align-self: center;
+  position: relative;
+  max-width: 350px;
+}
+
+.imagen {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+  box-shadow: 6px 6px 6px #0004;
+  border: var(--color-primary) 1px solid;
+  filter: contrast(1.5) brightness(1) saturate(1) sepia(0);
+}
+
+.history {
+  background: linear-gradient(
+    315deg,
+    var(--color-yellow),
+    white 50%,
+    var(--color-primary)
+  );
+  margin: 1em;
+  padding: 1em;
+  border-radius: 10%;
+  box-shadow: 6px 6px 6px #0004;
+}
+
+.titleHistory {
+  color: var(--color-secundary);
+  font-size: var(--font-size-md);
+  padding: 1em;
+  margin: 0;
+  text-decoration: underline dashed var(--color-primary) 5px;
+}
+
+.data {
+  color: var(--color-secundary);
+  font-size: var(--font-size-xs);
+  line-height: 2em;
+  padding: 1em 3em;
+  font-weight: 500;
+}
+
+.sectionGallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  padding: 5em 0;
+  background: linear-gradient(
+    200deg,
+    var(--color-yellow),
+    white 20%,
+    white 80%,
+    var(--color-yellow)
+  );
+}
+
+.titleGallery {
+  font-size: var(--text-max);
+  color: var(--color-yellow);
+  align-self: stretch;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  align-items: center;
+  justify-items: center;
+  width: 80%;
+  padding: 2em 0;
+  border-radius: 5%;
+}
+
+.content {
+  line-height: 2em;
+}
+
+.content h3 {
+  color: var(--color-yellow);
+  font-size: var(--text-max);
+}
+
+.content p {
+  padding-bottom: 1em;
+}
+
+.queso {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 25%;
+  border-bottom: 5px solid var(--color-yellow);
+  border-right: 5px solid var(--color-yellow);
+}
+
+@import '../App.css';
+
+.sectionContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  padding: 5em 0;
+  width: 100%;
+  background: linear-gradient(
+    160deg,
+    var(--color-yellow),
+    white 20%,
+    white 80%,
+    var(--color-yellow)
+  );
+}
+
+.titleContact {
+  font-size: var(--text-top);
+  margin: 0;
+  color: var(--color-yellow);
+}
+
+.formContact {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  flex-wrap: wrap;
+}
+
+.dataContact {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  border: none;
+  align-items: flex-start;
+}
+
+.dataContact label {
+  font-size: var(--text-bot);
+  color: var(--color-yellow);
+  font-weight: 500;
+}
+
+.dataContact input,
+textarea {
+  width: 300px;
+  padding: 1em;
+  font-size: var(--text-min);
+  margin: 0 0 1em 0;
+  border: 1px solid transparent;
+  border-right: 3px solid var(--color-yellow);
+  border-bottom: 1px solid var(--color-secundary);
+  outline: none;
+  text-indent: 0.5em;
+  color: var(--color-secundary);
+  resize: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dataContact textarea {
+  height: 125px;
+}
+
+.dataContact input:hover,
+textarea:hover {
+  border: 0.5px solid var(--color-yellow);
+  font-weight: 700;
+}
+
+.dataContact input:focus,
+textarea:focus {
+  border: 0.5px solid var(--color-yellow);
+  font-weight: 700;
+}
+
+.dataContact button {
+  background-color: var(--color-yellow);
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 1em;
+  font-size: var(--text-bot);
+  border-radius: 5%;
+}
+
+.dataContact button:hover {
+  background-color: var(--color-secundary);
+  color: var(--color-primary);
+  cursor: pointer;
+  border: 1px solid var(--color-secundary);
+}
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.groupContact {
+  padding: var(--text-min);
+}
+
+.line {
+  width: 80%;
+  height: 3px;
+  border: none;
+  background-color: var(--color-yellow);
+}

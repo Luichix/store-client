@@ -1,0 +1,110 @@
+@import '../App.css';
+
+.sectionContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  padding: 5em 0;
+  width: 100%;
+  background: linear-gradient(
+    160deg,
+    var(--color-yellow),
+    white 20%,
+    white 80%,
+    var(--color-yellow)
+  );
+}
+
+.titleContact {
+  font-size: var(--text-top);
+  margin: 0;
+  color: var(--color-yellow);
+}
+
+.formContact {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  flex-wrap: wrap;
+}
+
+.dataContact {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  border: none;
+  align-items: flex-start;
+}
+
+.dataContact label {
+  font-size: var(--text-bot);
+  color: var(--color-yellow);
+  font-weight: 500;
+}
+
+.dataContact input,
+textarea {
+  width: 300px;
+  padding: 1em;
+  font-size: var(--text-min);
+  margin: 0 0 1em 0;
+  border: 1px solid transparent;
+  border-right: 3px solid var(--color-yellow);
+  border-bottom: 1px solid var(--color-secundary);
+  outline: none;
+  text-indent: 0.5em;
+  color: var(--color-secundary);
+  resize: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dataContact textarea {
+  height: 125px;
+}
+
+.dataContact input:hover,
+textarea:hover {
+  border: 0.5px solid var(--color-yellow);
+  font-weight: 700;
+}
+
+.dataContact input:focus,
+textarea:focus {
+  border: 0.5px solid var(--color-yellow);
+  font-weight: 700;
+}
+
+.dataContact button {
+  background-color: var(--color-yellow);
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 1em;
+  font-size: var(--text-bot);
+  border-radius: 5%;
+}
+
+.dataContact button:hover {
+  background-color: var(--color-secundary);
+  color: var(--color-primary);
+  cursor: pointer;
+  border: 1px solid var(--color-secundary);
+}
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.groupContact {
+  padding: var(--text-min);
+}
+
+.line {
+  width: 80%;
+  height: 3px;
+  border: none;
+  background-color: var(--color-yellow);
+}
